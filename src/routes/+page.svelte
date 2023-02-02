@@ -126,7 +126,9 @@
 				query_link={'https://next.flipsidecrypto.xyz/edit/queries/ee5f0b7f-e4a8-4e9d-a727-7a2fb0c9798b'}
 			>
 				<div class="h-96" slot="figure">
-					
+					{#key paramToggled}
+						<DailyStaked chart_data={data.daily_cumu} {date_start} {date_end}  />
+					{/key}
 				</div>
 			</Chart>
 		</div>
@@ -137,7 +139,9 @@
 					query_link={'https://next.flipsidecrypto.xyz/edit/queries/ee5f0b7f-e4a8-4e9d-a727-7a2fb0c9798b'}
 				>
 					<div class="h-64" slot="figure">
-						
+						{#key paramToggled}
+							<DailyStakes chart_data={data.daily_cumu} {date_start} {date_end} />
+						{/key}
 					</div>
 				</Chart>
 			</div>
@@ -147,7 +151,9 @@
 					query_link={'https://next.flipsidecrypto.xyz/edit/queries/ee5f0b7f-e4a8-4e9d-a727-7a2fb0c9798b'}
 				>
 					<div class="h-64" slot="figure">
-						
+						{#key paramToggled}
+							<DailyStakers chart_data={data.daily_cumu} {date_start} {date_end} />
+						{/key}
 					</div>
 				</Chart>
 			</div>
