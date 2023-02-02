@@ -127,7 +127,7 @@
 			>
 				<div class="h-96" slot="figure">
 					{#key paramToggled}
-						<DailyStaked chart_data={data.daily_cumu} {date_start} {date_end}  />
+						<DailyStaked chart_data={data.daily_cumu} {date_start} {date_end} {address} />
 					{/key}
 				</div>
 			</Chart>
