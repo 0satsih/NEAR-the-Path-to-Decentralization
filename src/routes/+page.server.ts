@@ -213,7 +213,7 @@ ORDER BY
 	};
 
 	// Construct an array of flipside Query objects.
-	const queries = [daily_cumu];
+	const queries = [summary, daily_cumu];
 
 	// Map over array of queries, process & return an array of results.
 	const results = queries.map(async function (query) {
